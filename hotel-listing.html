@@ -1,0 +1,1961 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hotel-style.css">
+	<title>Mysuru Masala</title>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6-AgfMHer26p7OYyBxlqMrp3fwo5l2jA&callback=initMap" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<style>
+
+
+
+<!--End Serch Style -->
+
+
+
+
+@font-face {
+   font-family: century gothic;
+   src: url(century-gothic/Century Gothic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	
+	background-image:url(images/21.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+    font-family:"Century Gothic";
+}
+.container-fluid{
+	margin:0px;
+	padding:0px;	
+}
+
+/* Center website */
+.main {
+	margin-top:10px;
+	margin-left:17%;
+	margin-right:17%;
+	width: 80%;
+}
+.section{
+  	margin-top: 125px;;
+	width:100%;
+	position: relative;
+	height:400px;
+	background-color:rgba(1,1,1,0.75);
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+h3{
+	margin-top:-5px;
+	padding-top:5px;
+	padding-bottom:1px;
+	text-align:left;
+	color:orange;
+	font-size:15px;
+	font-family:"Century Gothic";
+	font-weight:bold;
+	
+}
+
+/*.row {
+    margin: 8px -16px;
+}*/
+
+.row,
+.row {
+	padding:0px;
+}
+
+.column {
+	padding-top:20px;
+	padding-left:40px;
+	padding-right:40px;
+    float: left;
+    width: 27%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navbar-toggle{
+		background-color:#333333;
+	}
+	.navbar-default{
+		background-color:rgba(0,0,0,0.5);
+		border:none;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+    
+		color:white;
+	}
+/* Content */
+.content img{
+  width:40vh;
+  height:20vh;
+}
+
+.button {
+    background-color:00BFFF; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-family:"Century Gothic";
+    font-size: 12px;
+    margin:2px 3px;
+    cursor: pointer;
+}
+.button:hover{
+	background-color:00BFFF;
+	text-decoration:none;
+	
+}
+
+
+p{
+	padding-top::15px;
+	color:white;
+    text-align:justify;
+    font-size:14px;
+	height:135px;!important
+}
+
+/*Button nxt&Pre*/
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*.previous, .nextbtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}*/
+.previous {
+	margin-top:14%;
+	margin-left:30px;
+	float:left;
+    background-color:transparent;
+	width:auto;
+    color: white;
+}
+
+.nextbtn {
+	margin-top:-14%;
+	margin-right:30px;
+
+	float:right;
+    background-color:transparent;
+	width:auto;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+	height:auto;
+}
+
+@media only screen and (max-width:  1300px) {
+	.section{
+		width:100%;
+	}
+	
+	.column {
+		 margin-top:10px;
+		margin-left:55px;
+		margin-right:20px;
+		padding:0px;
+        width: 20%;
+		/*width:90px;*/
+    }
+	
+	.nextbtn  {
+		margin-top:-15%;
+		margin-bottom:5px;
+		margin-right:20px;
+		float:right;
+	    
+	}
+}
+
+
+@media only screen and (max-width: 1280px) {
+	
+	.section{
+		width:100%;
+		height:auto;
+	}
+	
+	.main{
+		width:80%;
+			
+	}
+	 .column {
+		 margin-top:10px;
+		margin-left:25px;
+		margin-right:20px;
+		padding:0px;
+        width: 20%;
+		/*width:90px;*/
+    }
+	.content h3{
+			height:35px;!important
+
+	}
+	p{
+	
+	height:145px;!important
+}
+	.previous  {
+		margin-top:15%;
+		margin-left:35px;
+	    
+	}
+	.nextbtn  {
+		margin-top:-16%;
+		margin-bottom:5px;
+		margin-right:20px;
+		float:right;
+	    
+	}
+	
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.section{
+		margin-top:30px;
+		width:99%;
+		height:auto;
+	}
+	.main{
+		margin-top:15px;
+		margin-left:5px;
+		padding:10px;	
+	}
+	 .column {
+		 margin-top:10px;
+		margin-left:47px;
+		padding:0px;
+        width: 20%;
+		/*width:90px;*/
+    }
+	p{
+	
+	height:215px;!important
+}
+	
+	.previous  {
+		margin-top:170px;
+		margin-left:30px;
+	    
+	}
+	.nextbtn  {
+		margin-top:-320px;
+		margin-bottom:5px;
+		margin-right:20px;
+		float:right;
+	    
+	}
+
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+	.section{
+		
+		margin-top:40px;
+		padding:0px;
+		width:100%;
+		height:auto;
+	}
+	
+	.main{
+		width:90%;
+		/*position:absolute;*/
+		padding:0px;
+	}
+	
+	
+	
+    .column {
+		margin:12px;
+        width: 25%;
+		/*width:90px;*/
+    }
+	p{
+	
+	height:245px;!important
+}
+	.previous  {
+		margin-top:200px;
+		margin-left:5px;
+	    
+	}
+	.nextbtn  {
+		position:relative;
+		margin-top:-320px;
+		margin-bottom:3px;
+		margin-right:20px;
+		float:right;
+	    
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+	.navbar-default{
+		margin:5px;
+	}
+	.navbar-toggle{
+		
+	}
+	
+	.section{
+		margin-left:5px;
+		
+		height:auto;
+		width:96%;
+		padding-bottom:45px;	
+	}
+	.main{
+		width:95%;
+		/*position:absolute;*/
+		padding:0px;
+	}
+	
+    .column {
+		margin-top:40px;
+		margin-left:10px;
+        width:90%;
+    }
+	p{
+		height:150px;!important
+	}
+	
+	.content img{
+		margin-left:5%;
+		width:90%;
+		height:90%;	
+	}
+	.previous  {
+		margin-top:10px;
+		margin-left:15px;
+	    
+	}
+.nextbtn  {
+		margin-top:15px;
+		margin-bottom:15px;
+		margin-right:15px;
+	    
+	}
+	
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+
+<div class="row">
+	
+</div>
+	
+
+		<nav class="navbar navbar-default nav-style">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>                        
+      								</button>
+    									</div>
+    										<div class="collapse navbar-collapse" id="myNavbar" >
+      											<ul class="nav navbar-nav navbar-right">
+        											<li class=""><a href="index.html">Home </a></li>
+        												<li><a href="mm-world.html">MM World </a></li>
+        													<li><a href="nav.html#div2">Order Online </a></li>
+        														
+      											</ul>
+       										</div>
+                                           
+  			</div>
+		</nav>
+     
+     
+<!--<section class="main">
+	 <form class="search" method="post" action="hotel-listing.html" >
+		 <input type="text" name="q" placeholder="Search..." />
+		 <ul class="results" >
+			 <li><a href="#one">Search Result #1<br /><span>Description...</span></a></li>
+			 <li><a href="index.html">Search Result #2<br /><span>Description...</span></a></li>
+	 		<li><a href="index.html">Search Result #3<br /><span>Description...</span></a></li>
+         	<li><a href="index.html">Search Result #4</a></li>
+		 </ul>
+	 </form>
+</section>-->
+
+
+
+<div class="section">
+            
+	<a href="#" class="previous round" onclick="plusDivs(-1)">&#10094;</a>
+
+<div class="main">
+
+<!--SLIDE 1-->
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>RADISSON BLU PLAZA</h3>
+
+              <img src="images/radisson.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Considered one of the best hotels in the city, the Radisson Blu Plaza Hotel Mysore offers city-center convenience and gorgeous views of the Chamundi Hills.</p>  
+            <a href="https://www.google.co.uk/maps/place/Radisson+Blu+Plaza+Hotel,+Oslo/@59.9124686,10.7541845,17z/data=!3m1!4b1!4m5!3m4!1s0x46416e6034680b21:0xeb449354372e3f05!8m2!3d59.9124686!4d10.7563732?dcr=0" class="button btn-info">Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3>COUNTRY INN & SUITES </h3>
+
+              <img src="images/cis.jpg" alt="Nature"  class="img-responsive"></br>
+<p> The Country Inn & Suites By Carlson Mysore offers a modern retreat near major attractions like the Brindavan Gardens. Only 20 kilometres from Mandakalli Airport.</p>    
+            <a href="https://www.google.co.in/maps/place/Country+Inn+%26+Suites+By+Carlson+Mysore/@12.3634185,76.6061505,15z/data=!4m5!3m4!1s0x0:0x2c15ecbcba1372b8!8m2!3d12.3634185!4d76.6061505" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>GRAND MERCURE MYSURU</h3>
+
+                <img src="images/gmm.jpg" alt="adeiline"  class="img-responsive"></br>
+<p>Minutes away from Mysore Palace & Mysore Zoo, Grand Mercure Mysuru is located in the heart of the city on the famous Dasara Procession pathway. 
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Grand+Mercure+Mysuru/@12.3303692,76.6429913,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf707ecd37258f:0x8512c6be740173cf!8m2!3d12.330364!4d76.64518" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+                
+  <!--slide2-->
+  <!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column"  id="one">
+            <div class="content">
+                          <h3>HOTEL MB INTERNATIONAL</h3>
+
+              <img src="images/mbi.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Hotel M.B. International offers modern, air-conditioned rooms and suites with free Wi-Fi on Bangalore-Nilgiri Road. The hotel also has an in house restaurant and provides free private parking.</p> 
+            <a href="https://www.google.co.uk/maps/place/Hotel+MB+International/@12.3182706,76.6573946,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706bec48b637:0xf655238e30e022db!8m2!3d12.3182654!4d76.6595833" class="button btn-info" >Locate Us</a>  &nbsp;  <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3>THE VILLAGE</h3>
+
+              <img src="images/CRYSTAL PAARK INN.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Featuring free WiFi, The Village is set in Mysore, 2.4 km from Mysore Palace. The resort has an outdoor pool and barbecue, and guests can enjoy a meal at the restaurant.</p>    
+            <a href="https://www.google.co.uk/maps/place/The+Village/@51.5089159,-0.5945494,19z/data=!4m8!1m2!2m1!1sTHE+VILLAGE!3m4!1s0x48767acbe8598697:0x7b7f5c294440479b!8m2!3d51.5091155!4d-0.5944996" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>ROYAL ORCHID METROPOLE</h3>
+
+                <img src="images/rom.jpg" alt="adeiline"  class="img-responsive"></br>
+<p>Featuring 4-star accommodation in a former Maharaja’s residence, Royal Orchid Metropole offers modern amenities in a heritage building .
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Royal+Orchid+Metropole/@12.3117286,76.643275,18.75z/data=!4m5!3m4!1s0x3baf7079a0fa6353:0xffa8325bf6e9b97!8m2!3d12.3116807!4d76.6440539" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+<!--slide3-->
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>FORTUNE JP PALACE</h3>
+
+              <img src="images/fjp.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>The location of the hotel makes it ideally suited to host Business meets and conferences. Fortune JP Palace offers a banquet hall that can accommodate up at 800 guests.</p> 
+            <a href="https://www.google.co.uk/maps/place/Fortune+JP+Palace+-+Hotel+in+Mysore/@12.318268,76.6608631,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7004d8505455:0x7063e1e4e07d2467!8m2!3d12.3182628!4d76.6630518" class="button btn-info" >Locate Us</a>  &nbsp;  <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3> JAL MAHAL RESORT AND SPA</h3>
+
+              <img src="images/jmrs.jpg" alt="Nature"  class="img-responsive"></br>
+<p>At Jal Mahal Resort & Spa you will find a 24-hour front desk, garden and concierge desk. Other facilities offered at the property meeting facilities and a shared lounge.</p>    
+            <a href="https://www.google.co.uk/maps/place/Pan+Pacific+Jal+Mahal+Resort/@12.3081869,76.7277785,17.75z/data=!4m5!3m4!1s0x3baf71f69c21b365:0xc9ba3e5cddc573cd!8m2!3d12.308255!4d76.729274" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>WIND FLOWER RESORT</h3>
+
+                <img src="images/wrs.jpg" alt="adeiline" class="img-responsive"></br>
+<p>The Country Inn & Suites By Carlson Mysore offers a modern retreat near major attractions like the Brindavan Gardens.
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/The+Windflower+Resorts+and+Spa+Mysore/@12.3630835,75.9626606,10z/data=!4m8!1m2!2m1!1sWIND+FLOWER+RESORT!3m4!1s0x3baf6fd89c83e977:0x4da9721e030372c6!8m2!3d12.291793!4d76.670417" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+        <!--slide4-->
+
+
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>MYSORE HOTEL COMPLEX</h3>
+
+              <img src="images/mhc.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Mysore Hotel Complex is a well-equipped hotel designed to match every guest's requirements to the fullest. The hotel's spacious lobby and the warm ambience welcomes all to abode.</p> 
+            <a href="https://www.google.co.uk/maps/place/Mysore+Hotel+Complex/@12.3084728,76.658204,18.25z/data=!4m5!3m4!1s0x3baf7008c7718177:0xf8371228af875c16!8m2!3d12.308962!4d76.6584845" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3> HOTEL RITZ</h3>
+
+              <img src="images/hori.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Situated 800 metres from Mysore Palace in Mysore, Hotel Ritz Mysore features a restaurant and free WiFi. Guests can enjoy the on-site bar</p>    
+            <a href="https://www.google.co.uk/maps/place/The+Ritz+London/@51.5067941,-0.142201,18.25z/data=!4m5!3m4!1s0x48760529d30fc857:0x596135811e044014!8m2!3d51.5069446!4d-0.1415776" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>LEELA DELUXE</h3>
+
+                <img src="images/wrs.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Leela Residency, Mysore offer perfect settings for a budget holiday in this historical city with its modest interiors and gracious surroundings. Amid warm and hospitable ambienc.
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Leela+Residency/@12.322419,76.6578012,20.25z/data=!4m5!3m4!1s0x3baf706eda63ea1b:0x296acb16e3a86a7d!8m2!3d12.3225904!4d76.6579711?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->              
+
+
+<!--slide5-->
+
+
+
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>THE QUORUM</h3>
+
+              <img src="images/fjp.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>The Quorum Hotel is strategically located in the heart of the City of Palaces-Mysore. One can take a breath-taking aerial view of the cultural capital of Karnataka from our rooftop.</p>  
+            <a href="https://www.google.co.uk/maps/place/The+Quorum+Hotel/@12.3120916,76.6403453,19z/data=!4m5!3m4!1s0x3baf700c81c16215:0x79af15707635b519!8m2!3d12.312089!4d76.640527?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3> LALITHA MAHAL PALACE </h3>
+
+              <img src="images/lm.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Located just 4 km from the Mysore Bus Station and the historical Mysore Palace,It the benefits and facilities of an outdoor swimming pool, tennis court and billiards.</p>    
+            <a href="https://www.google.co.uk/maps/place/Lalitha+Mahal+Palace+Hotel/@12.2983245,76.6904236,17z/data=!4m5!3m4!1s0x3baf7005079c2ff5:0xc796fc64f4676317!8m2!3d12.2983245!4d76.6926123?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>HOTEL SANDESH THE PRINCE</h3>
+
+                <img src="images/hsp.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Hotel Sandesh The Prince is an elegant business hotel located close to the city centre. The 108-room hotel offers a wide choice of dining, recreation and business venues. 
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Sandesh+The+Prince/@12.3092466,76.6611246,17.25z/data=!4m5!3m4!1s0x3baf7015db02bf6b:0x80f279bf19da7b11!8m2!3d12.309312!4d76.6622884?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+
+<!--slide6-->
+
+
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>HOTEL LE RUCHI THE PRINCE</h3>
+
+              <img src="images/rtp.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Featuring an outdoor swimming pool and a fitness centre, Hotel Le Ruchi The Prince operates a 24-hour front desk to assist guests at all times.</p>  
+            <a href="https://www.google.co.uk/maps/place/Hotel+Ruchi+The+Prince/@12.3256508,76.6083991,17.25z/data=!4m5!3m4!1s0x3baf7af0e32da00d:0x34d572c29d3148cc!8m2!3d12.3263806!4d76.6092932?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3>SOUTHERN STAR</h3>
+
+              <img src="images/ss.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Southern Star, Mysore showcases a blend of class and contemporary sophistication. The unparalleled services, finest dining makes this hotel an ultimate choice for travelers across the globe.</p>    
+            <a href="https://www.google.co.uk/maps/place/Hotel+Southern+Star+Mysuru/@12.3047498,76.6555857,12.5z/data=!4m8!1m2!2m1!1sSOUTHERN+STAR!3m4!1s0x3baf7a98fac6a4a9:0xbf08f4f99d2672a0!8m2!3d12.3116475!4d76.6430449?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>HOTEL PAI VISTA</h3>
+
+                <img src="images/wrs.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Hotel Pai Vista is located in the royal city of Mysore, only 500 m from Mysore Palace and St. Philomena's Church.An Ayurvedic spa, a fitness centre and an outdoor pool are available.
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Pai+Vista,+Mysore/@12.3109478,76.6592705,18z/data=!4m5!3m4!1s0x3bae3e0f09ee1a07:0x84e24b744362300b!8m2!3d12.310976!4d76.65936?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+
+
+
+
+        <!--slide7-->
+
+
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>NI AMBAARI SUITES</h3>
+
+              <img src="images/has.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Set in Mysore in the Karnataka Region, 800 m from Mysore Palace, NI Ambaari Suites boasts a barbecue and terrace. Guests can enjoy the on-site restaurant.</p> 
+            <a href="https://www.google.co.uk/maps/place/NI+AMBAARI+SUITES/@12.3052124,76.649696,18.5z/data=!4m5!3m4!1s0x3baf700ef89297c9:0x4a374616d462b7e6!8m2!3d12.3055326!4d76.6498505?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3>SILENT SHORES RESORT </h3>
+
+              <img src="images/sis.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Situated along a lake, Silent Shores Resort & Spa is located in Mysore. It features a restaurant, outdoor swimming pool and non-smoking rooms with a private balcony that overlooks the lake.</p>    
+            <a href="https://www.google.co.uk/maps/place/Silent+Shores+Resort+%26+Spa/@12.3463506,76.5789995,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7bba8b6cd367:0x629e7103fc96d7ca!8m2!3d12.3463454!4d76.5811882?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>PARKLANE HOTEL</h3>
+
+                <img src="images/ph.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Located just 200 m from Mysore Palace, Parklane Hotel features an outdoor swimming pool and a library. It also houses a beer garden restaurant and comfortable rooms with Wi-Fi access. 
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Parklane+Hotel/@12.3085352,76.6577964,18.25z/data=!4m5!3m4!1s0x3baf7016d76d6909:0xba05de62dc2b9fa8!8m2!3d12.3086907!4d76.658352?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+
+        <!--slide8-->
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>ORIOLE RESORT</h3>
+
+              <img src="images/OR.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Located at the foothills of Chamundi Hills, the resort offers a spa and multi-cuisine restaurant. Visit the famous Mysore Zoo.Around 5 km from Mysore Junction.</p>  
+            <a href="https://www.google.co.uk/maps/place/Oriole+Resorts/@12.2913927,76.6673358,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7aaa26a218d9:0x7afab43471574d26!8m2!3d12.2913875!4d76.6695245?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3>HOTEL ROOPA</h3>
+
+              <img src="images/hr.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Located just 2 km from the Mysore Railway Station, Hotel Roopa provides 24-hour front desk for the convenience of the guests. It offers free WiFi throughout the property.</p>    
+            <a href="https://www.google.co.uk/maps/place/Hotel+Roopa/@12.3088951,76.6583093,17.25z/data=!4m5!3m4!1s0x3baf70141ddc0b63:0x91826d7f6eef62b9!8m2!3d12.308387!4d76.659679?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>HOTEL ADELINE</h3>
+
+                <img src="images/hoa.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Minutes away from Mysore Palace & Mysore Zoo, Grand Mercure Mysuru is located in the heart of the city on the famous Dasara Procession pathway.
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Adeline+Mysore/@12.3076084,76.6434574,17z/data=!4m5!3m4!1s0x3baf700bdef194b1:0x1b00518a6b340160!8m2!3d12.3078705!4d76.6453832?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+        <!--slide9-->
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>CRYSTAL PAARK INN</h3>
+
+              <img src="images/cpi.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Located in the heart of the city, Crystal Paark Inn is conveniently within 1 km from Mysore Junction Railway Station, the famous Mysore Zoo and Mysore Palace. </p>  
+            <a href="https://www.google.co.uk/maps/place/Hotel+Crystal+Paark+Inn/@12.309058,76.6611291,18z/data=!4m5!3m4!1s0x3baf703e70000001:0x43b98b91ff75308f!8m2!3d12.309286!4d76.661982?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3> HOTEL PALACE PLAZA</h3>
+
+              <img src="images/hpp.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Hotel Palace Plaza is situated just 500m from the local bus stand. It features a 24-hour front desk and houses a restaurant.</p>    
+            <a href="https://www.google.co.uk/maps/place/Hotel+Palace+Plaza/@12.309009,76.654558,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7013db5833e5:0x9d39bd5df03d9d90!8m2!3d12.3090038!4d76.6567467?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>WIND FLOWER RESORT</h3>
+
+                <img src="images/wrs.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Just a 10-minute drive to the Mysore Zoo and iconic Race Course and Golf Club, Windflower Resort & Spa offers air-conditioned rooms with free Wi-Fi.
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/The+Windflower+Resorts+and+Spa+Mysore/@12.291793,76.6682283,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf6fd89c83e977:0x4da9721e030372c6!8m2!3d12.291793!4d76.670417?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+        <!--slide10-->
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>CASA CLARKS INN </h3>
+
+              <img src="images/cci.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Casa Clarks INN Mysore is situated in Mysore, 5 km from Mysore Palace and 12 km from Brindavan Garden. Guests can enjoy the on-site restaurant.</p>  
+            <a href="https://www.google.co.uk/maps/place/Casa+Clarks+INN/@12.3162325,76.625379,17z/data=!4m12!1m6!3m5!1s0x3baf7a9717569b8f:0x65e7df99eb18dd2d!2sCasa+Clarks+INN!8m2!3d12.3162273!4d76.6275677!3m4!1s0x3baf7a9717569b8f:0x65e7df99eb18dd2d!8m2!3d12.3162273!4d76.6275677?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3> PC RESIDENCY</h3>
+
+              <img src="images/pcr.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Offering a terrace and views of the city, PC Residency is situated in Mysore in the Karnataka Region, 7.6 km from Mysore Palace. Guests can enjoy the on-site bar.</p>    
+            <a href="https://www.google.co.uk/maps/place/PC+Residency/@12.338958,76.6131152,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a5e61deaaab:0x8be64400db2cff09!8m2!3d12.3389528!4d76.6153039?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>THE GRAND VANAM</h3>
+
+                <img src="images/gv.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Minutes away from Mysore Palace & Mysore Zoo, Grand Mercure Mysuru is located in the heart of the city on the famous Dasara Procession pathway. 
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/The+Grand+Vanam/@12.3048155,76.6625661,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7017f767ee47:0x8bf1ae20d7ad2ffd!8m2!3d12.3048103!4d76.6647548?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+
+        <!--slide11-->
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>TREEBO GOLDEN CASTLE</h3>
+
+              <img src="images/tgc.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Treebo Golden Castle is situated in Mysore, 2 km from Mysore Palace and 14 km from Brindavan Garden.Every room at this hotel is air conditioned and features a TV. </p>  
+            <a href="https://www.google.co.uk/maps/place/Treebo+Golden+Castle/@12.3218896,76.6442813,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7073e193ee87:0x86409a1468234402!8m2!3d12.3218844!4d76.64647?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3>SAMASTHA ROOMS AND SUITES</h3>
+
+              <img src="images/srs.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Offering a terrace and views of the city, PC Residency is situated in Mysore in the Karnataka Region, 7.6 km from Mysore Palace. Guests can enjoy the on-site bar. </p>    
+            <a href="https://www.google.co.uk/maps/place/Samasth+Rooms+and+Suites/@12.3112862,76.6520953,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf701291bbb743:0x7762e1623b5af7d!8m2!3d12.311281!4d76.654284?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>KINGS L GRAND</h3>
+
+                <img src="images/gv.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Featuring free WiFi and a restaurant, Kings L Grand offers accommodation in Mysore, 900 m from Mysore Palace. Guests can enjoy the on-site restaurant. 
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Kings+L+Grand,+Mysore/@12.2972732,76.6541143,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf701b866fa05f:0x92224b74d23e863e!8m2!3d12.297268!4d76.656303?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+        <!-- END GRID -->
+
+                <!--slide12-->
+
+<!-- Portfolio Gallery Grid -->
+      <div class="row listing">
+          
+          <div class="column">
+            <div class="content">
+                          <h3>HOTEL KINGS KOURT</h3>
+
+              <img src="images/hkk.jpg" alt="Lights"  class="img-responsive"></br>
+              
+<p>Providing air-conditioned rooms with free Wi-Fi, Kings Kourt Hotel in Mysore also has free parking and a 24-hour front desk. </p>  
+            <a href="https://www.google.co.uk/maps/place/Hotel+Kings+Kourt/@12.3115572,76.6427823,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7008bf1f3c89:0xcb44bd4d3e39586c!8m2!3d12.311552!4d76.644971?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                    </div>
+          </div>
+          <div class="column">
+            <div class="content">
+                                      <h3>HOTEL SUNSHINE</h3>
+
+              <img src="images/hss.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Hotel Sunshine is located in Mysore. It is 200 m from the beautiful St. Philomena's Church, Mysore and 2 km from Amba Vilas Palace, the residence of the royal family </p>    
+            <a href="https://www.google.co.uk/maps/place/Hotel+Sunshine/@12.3222304,76.6557858,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706ed80203af:0x370f5fe16296fa05!8m2!3d12.3222252!4d76.6579745?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+           <div class="column">
+            <div class="content">
+                                      <h3>FAB HOTEL OLIVE COMFORTS</h3>
+
+                <img src="images/foc.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Featuring free WiFi and a restaurant, FabHotel Olive Comforts offers accommodation in Mysore. Guests can enjoy the on-site restaurant. 
+                                
+                                </p>            
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Sunshine/@12.3222304,76.6557858,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706ed80203af:0x370f5fe16296fa05!8m2!3d12.3222252!4d76.6579745?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+              
+                </div>
+      </div>
+
+
+
+  
+
+<!-- Portfolio Gallery Grid SLIDE 13 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>FAB HOTEL DAWN </h3>
+
+    					<img src="images/fhd.jpg" alt="fab dawn"  class="img-responsive"></br>
+     					
+<p>Located just 4 km from the Mysore Railway Station and the Mysore Bus Station, The Dawn provides 24-hour front desk for the convenience of the guests.</p>	
+    				<a href="https://www.google.co.uk/maps/place/FabHotel+Dawn+Mysore/@12.3422228,76.6520834,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf708f37d512d1:0xafc7524c660da802!8m2!3d12.3422176!4d76.6542721?dcr=0" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>NATIONAL RESIDENCY</h3>
+
+    					<img src="images/nr.jpg" alt="national residency"  class="img-responsive"></br>
+<p>Offering a restaurant and a fitness centre.The property is 2.5 km from Maharaja Palace, 4 km from Mysore Zoo and 23 km from Brindavan Garden.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/National+Residency/@12.331938,76.6495277,17z/data=!4m5!3m4!1s0x3baf707cc6c3ef61:0xca0598c550ea292d!8m2!3d12.332028!4d76.6517367?dcr=0" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL JADE GARDEN</h3>
+
+      					<img src="images/jg.jpg" alt="jade garden"  class="img-responsive"></br>
+<p> Minutes away from Mysore Palace & Mysore Zoo, Hotel is located in the heart of the city on the famous Dasara Procession pathway.
+                                
+                                </p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Jade+Garden/@12.3007408,76.6382003,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7aa9c5555547:0x70fa95dd09a78384!8m2!3d12.3007356!4d76.640389?dcr=0" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->
+                
+  
+  
+  <!-- Portfolio Gallery Grid SLIDE 14 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>HOTEL GINGER MYSORE</h3>
+
+    					<img src="images/gm.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Ginger Mysore is a cosy hotel located 1 km from Devaraj URS Road, the shopping district.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Ginger+Hotel,+Mysore/@12.3065164,76.6663874,17.71z/data=!4m5!3m4!1s0x3baf703db698df65:0xd51d8b0a2854fbca!8m2!3d12.306986!4d76.6671202" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>HOTEL DASAPRAKASH</h3>
+
+    					<img src="images/dp.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Hotel is located 4 km from Amba Vilas Palace, a historical palace and the Art Gallery.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Hotel+Dasaprakash/@12.3111174,76.6531283,18.03z/data=!4m5!3m4!1s0x3baf7012584bc3b9:0xbe135061397b93fb!8m2!3d12.3115547!4d76.6538862" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>THE VICEROR COMFORTS</h3>
+
+      					<img src="images/vc.jpg" alt="adeiline"  class="img-responsive"></br>
+<p> Less than 500 m from Mysore Palace, The Viceroy Comforts is built with exquisite architecture.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Viceroy+Comforts/@12.2925326,76.6521528,16z/data=!4m8!1m2!2m1!1sTHE+VICEROR+COMFORTS!3m4!1s0x3baf701cd6d3d133:0x32bd80ced046ad51!8m2!3d12.295128!4d76.6544323" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->
+
+
+
+<!-- Portfolio Gallery Grid SLIDE 15 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>SUSHASINI PALACE</h3>
+
+    					<img src="images/sp.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Featuring free WiFi and a restaurant, Suhashini Palace offers accommodation in Mysore, 1.9 km from Mysore Palace.Rooms have a flat-screen TV with cable channels.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Suhashini+Palace/@12.3208572,76.6452591,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7071314f1715:0xc1c90000e53c2206!8m2!3d12.320852!4d76.6474478" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>BLUE MOON RESIDENCY  </h3>
+
+    					<img src="images/bmr.jpg" alt="Nature"  class="img-responsive"></br>
+<p>The Mysore Palace and the Mysore Zoo are within 1.5 km. Free WiFi access is available in the rooms of the property.Each room here will provide you with a cable TV</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Blue+Moon+Residency/@12.3203312,76.6551217,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706ebd017ca3:0xca38ab015f180041!8m2!3d12.320326!4d76.6573104" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>GALAXY COMFORTS</h3>
+
+      					<img src="images/gac.jpg" alt="adeiline" class="img-responsive"></br>
+<p>
+                                Galaxy Comforts is located in Mysore. The Mysore Palace and the Mysore Zoo are within 1.5 km. Free WiFi access is available in the rooms of the property.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Galaxy+Comforts/@12.3212264,76.6555086,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706ec5d34e59:0xe9e033bdd32b6c14!8m2!3d12.3212212!4d76.6576973" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->
+				
+				
+<!-- Portfolio Gallery Grid SLIDE 16 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>LUCIYA INTERNATIONAL MYSORE</h3>
+
+    					<img src="images/lci.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Located just 400 metres from the Mysore Palace,Luciya International Mysore provides 24-hour front desk for the convenience of the guests.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Hotel+Luciya+International/@12.3113636,76.6505231,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7008bf1f3c89:0x148cefdde6ead9a1!8m2!3d12.3113584!4d76.6527118" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>HOTEL SUNSHINE  </h3>
+
+    					<img src="images/hss.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Hotel Sunshine is located in Mysore. It is 200 m from the beautiful St. Philomena's Church,the residence of the royal family.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Hotel+Sunshine/@12.322178,76.6567943,17z/data=!4m5!3m4!1s0x3baf706ed80203af:0x370f5fe16296fa05!8m2!3d12.3222252!4d76.6579745" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>AISHWARYA RESIDENCY</h3>
+
+      					<img src="images/ar.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Aishwarya Residency is set in the heart of Mysore within a few steps away from various shopping and dining options.provides free Wi-Fi access.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Aishwarya+Residency/@12.3158642,76.6559913,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706c9c987989:0x968f8d5aa8f27ee4!8m2!3d12.315859!4d76.65818" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+
+								
+<!-- Portfolio Gallery Grid SLIDE 17 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>RAJ MAHAL INN</h3>
+
+    					<img src="images/rai.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Offering an exclusive Indian restaurant, Rajmahal Inn is located 6 km from GRS Fantasy Park, Mysore Palace and the Local Bus Station.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Hotel+Rajmahal+Inn/@12.3243058,76.6109178,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7af23b6353b1:0x31bae97b37702f90!8m2!3d12.3243006!4d76.6131065" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>SUVARNA RESIDENCY</h3>
+
+    					<img src="images/srs.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Hotel Sunshine is located in Mysore. It is 200 m from the beautiful St. Philomena's Church,the residence of the royal family.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Suvarna+Residency/@12.2866584,76.6238623,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf654c59ef5ea3:0x99ae2bd8c9feb592!8m2!3d12.2866532!4d76.626051" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>VYSHAK INTERNATIONAL HOTEL</h3>
+
+      					<img src="images/vih.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Featuring free WiFi, a restaurant and a terrace, hotel Vyshak residency offers accommodation in Mysore. Guests can enjoy the on-site restaurant.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Vyshak+International+Hotel/@12.3117052,76.646438,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7008bf1f3c89:0x93051e655d272bce!8m2!3d12.3117!4d76.6486267" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+
+				
+							
+<!-- Portfolio Gallery Grid SLIDE 18 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>SK CONTINENTAL</h3>
+
+    					<img src="images/skc.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Set in Mysore, 1.2 km from Mysore Palace, SK Continental features air-conditioned rooms.Each room includes a private bathroom.</p>	
+    				<a href="https://www.google.co.uk/maps/place/SK+Continental/@12.3090172,76.6585443,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf703e70000001:0xb730805b5b121de4!8m2!3d12.309012!4d76.660733" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>THE GRAND INN MYSORE</h3>
+
+    					<img src="images/tgi.jpg" alt="Nature"  class="img-responsive"></br>
+<p>The Grand Inn Mysore is located just opposite the Bartholomews Church.Each room here will provide you with a satellite TV.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/The+Grand+Inn/@12.3112339,76.6573634,18.43z/data=!4m5!3m4!1s0x3baf701377e5b411:0xd7543d191b95fccb!8m2!3d12.311333!4d76.657829" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL JB PARADISE</h3>
+
+      					<img src="images/hjb.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Hotel JB Paradise offers accommodation in Mysore.All rooms have a flat-screen TV with cable channels. Rooms have a private bathroom offering free toiletries.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+J.B+Paradise/@12.3384067,76.6141727,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a5e699785ef:0x5258a052070b54f4!8m2!3d12.3384015!4d76.6163614" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+
+				
+							
+<!-- Portfolio Gallery Grid SLIDE 19 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>HOTEL AJANTHA PALACE</h3>
+
+    					<img src="images/hoa.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Offering a sun terrace and views of the lake, Hotel Ajantha Palace is located in Mysore, 1.5 km from Mysore Palace. Guests can enjoy the on-site restaurant.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Hotel+Ajantha+Palace/@12.3171727,76.6584786,17.38z/data=!4m5!3m4!1s0x3baf706b8db9db79:0xc6d8578e051b0e8d!8m2!3d12.317892!4d76.659152" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>MANNARS RESIDENCY</h3>
+
+    					<img src="images/mr.jpg" alt="Nature"  class="img-responsive"></br>
+<p> Situated in the heart of Mysore city, Mannars Residency is conveniently within 500 m from Mysore City Railway Station and the well-known Mysore Palace.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Mannars+Residency/@12.3117135,76.6460575,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf700c936be535:0xd176660736557f25!8m2!3d12.3117083!4d76.6482462" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL AIRLINES</h3>
+
+      					<img src="images/har.jpg" alt="adeiline" class="img-responsive"></br>
+<p>  Hotel Airlines offers accommodation in Mysore. Guests can enjoy the on-site restaurant. Free private parking is available on site.Rooms have a flat-screen TV.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Airlines/@12.300769,76.6392359,18z/data=!4m12!1m6!3m5!1s0x3baf7aa8142c2281:0x451cac00a2eae808!2sHotel+Airlines!8m2!3d12.3007349!4d76.6401961!3m4!1s0x3baf7aa8142c2281:0x451cac00a2eae808!8m2!3d12.3007349!4d76.6401961" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+
+				
+							
+<!-- Portfolio Gallery Grid SLIDE 20 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>ADDHURI COMFORTS INN</h3>
+
+    					<img src="images/aci.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Addhuri Comforts Inn is situated in Mysore, 400 m from Mysore Palace.Each room is fitted with a flat-screen TV. Each room includes a private bathroom.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Addhuri+Comforts+Hotel/@12.3027328,76.649761,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf700ff0d3dc83:0xb2bc5031c168bfdc!8m2!3d12.3027276!4d76.6519497" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>AKSHAYA PALACE INN</h3>
+
+    					<img src="images/api.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Featuring free WiFi, Akshaya Palace Inn is set in Mysore, 6 km from Mysore Palace. Free private parking is available on site.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Akshaya+Palace+Inn/@12.3510951,76.6244165,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a6e86b5cb39:0xc4f91cb876d9fb80!8m2!3d12.3510899!4d76.6266052" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>THE GREEN HOTEL</h3>
+
+      					<img src="images/tgh.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Offering a restaurant that serves Indian, Chinese and continental specialities, The Green Hotel is located 7 km from Mysore Railway Station.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/The+Green+Hotel/@12.3221175,76.6170479,17.03z/data=!4m8!1m2!2m1!1sTHE+GREEN+HOTEL,MYSORE!3m4!1s0x3baf7aed4915fe41:0x63eba09c044ad97c!8m2!3d12.3219271!4d76.6176921" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+
+							
+<!-- Portfolio Gallery Grid SLIDE 21 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>HOTEL PEARL INN</h3>
+
+    					<img src="images/hpi.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Hotel Pearl Inn is located in Mysore, 500 m away from Mysore Railway Station. It houses a shared living area and bright rooms with en suite bathrooms.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Hotel+Pearl+Inn+Mysore/@12.3163458,76.6490169,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706d82f94d1d:0xba17713eb66d13e1!8m2!3d12.3163406!4d76.6512056" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>ROAYAL INN</h3>
+
+    					<img src="images/roi.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Offering a restaurant that serves Indian, Chinese and continental delights, Royal Inn is located in Mysore. A 24-hour front desk is available.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Royal+Inn+Mysore/@12.3513082,76.6266213,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a6de3189d53:0xe223651e5442d8bf!8m2!3d12.351303!4d76.62881" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL SIDDARTA</h3>
+
+      					<img src="images/hos.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Hotel Siddharta is situated in Mysore, 700 m from Mysore Palace and 16 km from Brindavan Garden. Guests can enjoy the on-site restaurant.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Siddharta/@12.3075436,76.6589933,17z/data=!4m5!3m4!1s0x3baf703e6fdcd3c1:0x987b9b8ac1ca66b4!8m2!3d12.308073!4d76.660431" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+
+
+							
+<!-- Portfolio Gallery Grid SLIDE 22 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>NITYOTSAVA RESIDENCY</h3>
+
+    					<img src="images/nir.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Featuring free WiFi and a restaurant, Nityotsava Residency offers accommodation in Mysore. Free private parking is available on site.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Nityotsava+Residency/@12.2865749,76.6250823,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf654dae67d561:0xcc4501097bb53077!8m2!3d12.2865697!4d76.627271" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>KINGSTON RESIDENCY</h3>
+
+    					<img src="images/kr.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Featuring free WiFi throughout the property, Kingston Residency is situated in Mysore, 3 km from Mysore Palace. Free private parking is available on site.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Kingston+Residency+%E0%B2%95%E0%B2%BF%E0%B2%82%E0%B2%97%E0%B3%8D+%E0%B2%B8%E0%B3%8D%E0%B2%9F%E0%B2%A8%E0%B3%8D+%E0%B2%B0%E0%B3%86%E0%B2%B8%E0%B2%BF%E0%B2%A1%E0%B3%86%E0%B2%A8%E0%B3%8D%E0%B2%B8%E0%B2%BF/@12.3209739,76.6299689,17z/data=!4m5!3m4!1s0x3baf7a9af41eb175:0x5a4dc1b2376937bd!8m2!3d12.3212307!4d76.6315031" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL PRAKASH PALACE</h3>
+
+      					<img src="images/hop.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Located barely 500 metres from the Mysore Railway Station, Hotel Prakaash Palace offers clean and comfortable accommodation in the scenic Mysore city.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Prakaash+Palace/@12.3141221,76.6451472,15z/data=!4m8!1m2!2m1!1sHOTEL+PRAKASH+PALACE,MYSORE!3m4!1s0x3baf7072f6398e35:0x9bdfae0e0ed64549!8m2!3d12.316265!4d76.65089" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+							
+						
+<!-- Portfolio Gallery Grid SLIDE 23 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>HOTEL SANGEETH LODGING</h3>
+
+    					<img src="images/hsl.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Offering a terrace, hotel sangeeth lodging is located in Mysore, 1 km from Mysore Palace. Brindavan Garden is 15 km from the property.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Sangeeth+Lodge/@12.3110423,76.6468822,17z/data=!4m5!3m4!1s0x3baf700c92142ba7:0x21ada6b0fbe6100!8m2!3d12.311383!4d76.6482126" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>GOLDEN LANDMARK RESORT</h3>
+
+    					<img src="images/glr.jpg" alt="Nature"  class="img-responsive"></br>
+<p>The Golden Landmark Resort is a perfect rendezvous for Holiday-makers as well as Travelers. It represents the charm of the old and fulfills the demanding needs of the present.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Golden+Landmark/@12.3537613,76.626105,15.57z/data=!4m5!3m4!1s0x3baf7a6d0234b3b7:0x5202409fb525ec9f!8m2!3d12.3556293!4d76.6272757" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>VEDANTA WAKEUP</h3>
+
+      					<img src="images/vm.jpg" alt="adeiline" class="img-responsive"></br>
+<p>Vedanta Wakeup provides free breakfast and free internet access. This hotel in Mysore has 18 spacious rooms, spread across 2 floors.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Vedanta+Wake+Up!+-+Gokulam/@12.3349585,76.6221368,17z/data=!4m5!3m4!1s0x3baf7a627447aa75:0x23cc604e7e1ecf8c!8m2!3d12.3351629!4d76.6239822" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->              
+
+							
+						
+<!-- Portfolio Gallery Grid SLIDE 24 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>GANESH PRASAD LODGE</h3>
+
+    					<img src="images/gpl.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Ganesh Prasad Lodge, Mysore is a delightful hotel exhibits a supreme location and gives an advantage to move around the city conveniently.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Sree+Ganesh+Prasad+Lodge/@12.3098672,76.6473893,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7008c7718177:0x3062c799c1dc5513!8m2!3d12.309862!4d76.649578" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>AAVASS INN PARADISE</h3>
+
+    					<img src="images/aap.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Located in Mysore, 1.1 km from Mysore Palace, Aavass Inn Paradise features free WiFi access and free private parking. Guests can enjoy the on-site restaurant.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Aavass+Inn+Paradise/@12.3150544,76.6563183,19.08z/data=!4m5!3m4!1s0x3baf706cc2e6cb89:0x268466bffb332ea8!8m2!3d12.3151107!4d76.6566468" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL ROYAL PALACE</h3>
+
+      					<img src="images/rpm.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Hotel Royal Palace Mysore is located in Mysore, 2.3 km from Mysore Palace. Each room is fitted with a flat-screen TV with satellite channels.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Royal+Palace/@12.3242072,76.6429343,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf707763ba6b43:0xf319ed50e617e8d!8m2!3d12.324202!4d76.645123" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->   				
+									
+<!-- Portfolio Gallery Grid SLIDE 25 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>HOTEL SHASTRI PARADISE</h3>
+
+    					<img src="images/hosp.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Featuring free WiFi, Hotel Shastri Paradise offers accommodation in Mysore, 900 m from Mysore Palace. Free private parking is available on site.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Hotel+Shastri+Paradise/@12.3114065,76.6578525,17z/data=!4m5!3m4!1s0x3baf7014851ed343:0x8a95a42500baf797!8m2!3d12.3117157!4d76.6591614" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>HOTEL SCVDS</h3>
+
+    					<img src="images/scvds.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Set in Mysore, 600 m from Mysore Palace, Hotel SCVDS features free WiFi access and free private parking.Brindavan Garden is 16 km from Hotel SCVDS.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Hotel+S.C.V.D.S/@12.308677,76.6579337,19.23z/data=!4m5!3m4!1s0x3baf7014009afc0b:0xd74db4f655530f57!8m2!3d12.30875!4d76.658255" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL ADITYA</h3>
+
+      					<img src="images/ham.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Located just 2 km from the Mysore Railway Station and the magnificent Mysore Palace, Hotel Aditya provides 24-hour front desk for the convenience of the guests.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Aditya/@12.3117793,76.6461212,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf700c944e2b61:0xff46244b0b9e51e!8m2!3d12.3117741!4d76.6483099" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->   				
+
+									
+<!-- Portfolio Gallery Grid SLIDE 26 -->
+			<div class="row listing">
+  				
+  				<div class="column">
+    				<div class="content">
+                          <h3>HOTEL SHASTRI PARADISE</h3>
+
+    					<img src="images/hosp.jpg" alt="Lights"  class="img-responsive"></br>
+     					
+<p>Featuring free WiFi, Hotel Shastri Paradise offers accommodation in Mysore, 900 m from Mysore Palace. Free private parking is available on site.</p>	
+    				<a href="https://www.google.co.uk/maps/place/Hotel+Shastri+Paradise/@12.311113,76.6581422,17z/data=!4m5!3m4!1s0x3baf7014851ed343:0x8a95a42500baf797!8m2!3d12.3117157!4d76.6591614" class="button btn-info" >Locate Us</a>  &nbsp;	<a href="#" class="button btn-info" >MM World</a>
+                    </div>
+  				</div>
+  				<div class="column">
+    				<div class="content">
+                          						<h3>HOTEL SCVDS</h3>
+
+    					<img src="images/scvds.jpg" alt="Nature"  class="img-responsive"></br>
+<p>Set in Mysore, 600 m from Mysore Palace, Hotel SCVDS features free WiFi access and free private parking.Brindavan Garden is 16 km from Hotel SCVDS.</p>    
+ 					 	<a href="https://www.google.co.uk/maps/place/Hotel+S.C.V.D.S/@12.3087552,76.6560663,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7014009afc0b:0xd74db4f655530f57!8m2!3d12.30875!4d76.658255" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                     </div>
+                 </div>
+  				 <div class="column">
+    				<div class="content">
+                          						<h3>HOTEL ADITYA</h3>
+
+      					<img src="images/ham.jpg" alt="adeiline" class="img-responsive"></br>
+<p> Located just 2 km from the Mysore Railway Station and the magnificent Mysore Palace, Hotel Aditya provides 24-hour front desk for the convenience of the guests.</p>    				
+                                
+                               <a href="https://www.google.co.uk/maps/place/Hotel+Aditya/@12.3117793,76.6461212,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf700c944e2b61:0xff46244b0b9e51e!8m2!3d12.3117741!4d76.6483099" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                                </div>
+  						
+                </div>
+ 			</div>
+				<!-- END GRID -->   	
+
+          <!-- Portfolio Gallery Grid slide26 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>OYO 2410</h3>
+                          <img src="images/oyo.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Featuring free WiFi throughout the property,Every room at this hotel is air conditioned and is fitted with a TV. Rooms come with a private bathroom.Rooms come with a private bathroom.</p>  
+                          <a href="https://www.google.co.uk/maps/place/OYO+2410+near+Railway+Station/@12.3130582,76.6404973,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf700ab55a463f:0xa097e17a443012a6!8m2!3d12.313053!4d76.642686" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>SHREYAS DELUX LODGE</h3>
+                          <img src="images/sdl.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Offering a terrace, Mysore Palace is 700 m from the property. Free private parking is available on site.All units feature a satellite TV.Towels and bed linen are provided.</p>    
+                          <a href="https://www.google.co.uk/maps/place/Shreyash+Deluxe+Lodge/@12.3099875,76.6566052,17z/data=!4m5!3m4!1s0x3baf701390685505:0xfc5d412d57c0294a!8m2!3d12.3102758!4d76.6577425" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>MCI JASMINE SUITES</h3>
+                          <img src="images/mci.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>MCI Jasmine Suites is set in Mysore, 5 km from Mysore Palace. Brindavan Garden is 12 km from the property.The accommodation is equipped with a flat-screen TV.</p>                                          
+                           <a href="https://www.google.co.uk/maps/place/Jasmine+Suites/@12.3267078,76.6041151,14z/data=!4m5!3m4!1s0x3baf7a593f2bfd33:0x1d8d1b1248a42864!8m2!3d12.3271315!4d76.6184666" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+			
+
+              <!-- Portfolio Gallery Grid slide27 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>HOTEL LIKE MY HOME</h3>
+                          <img src="images/hlm.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Like My Home offers accommodation in Mysore. Free private parking is available on site.Certain units have a seating area where you can relax.</p>  
+                          <a href="https://www.google.com/maps/place/MyHome+Homestay/@12.286064,76.650008,21z/data=!4m5!3m4!1s0x0:0xa4aafb18a4f426f6!8m2!3d12.286068!4d76.650013?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>UNCLE LOBO's RESIDENCY</h3>
+                          <img src="images/ulr.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Uncle Lobo's Residency is located in Mysore, 8 km from Mysore Palace. Guests can enjoy the on-site restaurant. Free WiFi is available.</p>    
+                          <a href="https://www.google.com/maps/place/Uncle+Lobo's+Residency/@12.34984,76.6027736,15.32z/data=!4m8!1m2!2m1!1sUNCLE+LOBO's+RESIDENCY!3m4!1s0x3baf7a47d60da9eb:0xb141e88e30cbbf04!8m2!3d12.3537135!4d76.6066897?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>YASHASVINI COMFORTS</h3>
+                          <img src="images/yc.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>Featuring free WiFi, a restaurant and a terrace, Yashaswi Comforts offers accommodation in Mysore, 1 km from Mysore Palace. Free private parking is available on site.</p>                                          
+                           <a href="https://www.google.com/maps/place/Yashaswi+Comforts/@12.2972442,76.6553923,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf701bf612dea7:0xea2e5daaae69704d!8m2!3d12.297239!4d76.657581?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+              <!-- Portfolio Gallery Grid slide28 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>MANGROVE SUITES</h3>
+                          <img src="images/mgs.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Considered one of the best hotels in the city, the HOTEL MB INTERNATIONAL Mysore offers city-center convenience and gorgeous views of the Chamundi Hills.</p>  
+                          <a href="https://www.google.com/maps/place/Mangrove+Suites/@12.3200887,76.6197216,17z/data=!4m5!3m4!1s0x3baf7a9301eadbff:0xa150d1feae532805!8m2!3d12.320335!4d76.620773?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>YASHAS RESIDENCY</h3>
+                          <img src="images/yr.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p> Hotel Yashas Residency, The banqueting and conferencing features of the hotel makes it a desired destination for corporate and leisure travellers.</p>    
+                          <a href="https://www.google.com/maps/place/Mangrove+Suites/@12.3200887,76.6197216,17z/data=!4m5!3m4!1s0x3baf7a9301eadbff:0xa150d1feae532805!8m2!3d12.320335!4d76.620773?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>HOTEL AMOGGH PALACE</h3>
+                          <img src="images/hoap.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p> Offering a garden, Hotel amoggh palace is located in Mysore. Mysore Palace is 3 km from the property. Free WiFi is available and free private parking is available on site.</p>                                          
+                           <a href="https://www.google.com/maps/place/HOTEL+AMOGGH+PALACE+LODGE+-+Lodges+In+Mysore,+Lodges+Near+Chamundi+Hill,+Lodges+In+Nanjagudu+Road/@12.2643752,76.6549223,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf6f93c24e4c1f:0x409b095c823575ea!8m2!3d12.26437!4d76.657111?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide29 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>THE KINGS SANCTUARY</h3>
+                          <img src="images/tks.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Located in Nagarahole National Park, Kings Sanctuary is nestled in 34 acres of mango orchards and natural greenery. It offers a variety of activities including trekking.</p>  
+                          <a href="https://www.google.com/maps/place/The+Kings+Sanctuary/@12.1736648,76.1983797,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae141e84e6b615:0x409c7aeb37c31908!8m2!3d12.1736596!4d76.2005684?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>KABANI LAKE VIEW RESORT</h3>
+                          <img src="images/klr.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Offering a barbecue and children's playground, Kabini Lake View Resort is set near Kabini backwaters in the Karnataka Region, 39 km from Wayanad.</p>    
+                          <a href="https://www.google.com/maps/place/Kabini+Lake+View+Resort/@11.9577162,76.2990448,12.94z/data=!4m5!3m4!1s0x3ba5f1f668597215:0x5ad3b400ab09fad8!8m2!3d12.0036671!4d76.2850707?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>THE ATRIUM BOUTIQUE</h3>
+                          <img src="images/tab.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p> At Atrium Boutique Hotel we leave no stone unturned when it comes to exclusive holidays. Revel in the lap of luxury and discover the spirit of Mysore only at The Atrium Boutique Hotel.</p>                                           
+                           <a href="map89.html" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide30 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>RED EARTH KABINI</h3>
+                          <img src="images/rek.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Set on the peaceful backwaters of Kabini Dam, Red Earth Resort welcomes guests with a beautiful outdoor pool which overlooks the lake.</p> 
+                          <a href="https://www.google.com/maps/place/Red+Earth+Kabini/@11.976132,76.3092373,17z/data=!3m1!4b1!4m5!3m4!1s0x3ba5effc13b8ed1f:0xf3874612994b0c9b!8m2!3d11.976132!4d76.311426?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>TULIPS HOMESTAY</h3>
+                          <img src="images/tuh.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Tulips Homestay is located in Mysore, 5 km from Mysore Palace and 11 km from Brindavan Garden.There is a 24-hour front desk at the property.</p>    
+                          <a href="https://www.google.com/maps/place/Tulips+Homestay/@12.3299474,76.6127647,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7af46098dceb:0x84e51599a637e605!8m2!3d12.3299474!4d76.6149534?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>SK ELEGANCE HOTEL</h3>
+                          <img src="images/ske.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>SK Elegance is placed in the heart of Mysore. Guests can soothe tense muscles at the sauna facilities or enjoy a meal at Red Pepper Restaurant.</p>                                           
+                           <a href="https://www.google.com/maps/place/SK+Elegance/@12.3083834,76.6577953,18.16z/data=!4m5!3m4!1s0x3baf701400d6123d:0xe977a055f4e94262!8m2!3d12.308621!4d76.658774?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide31 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>THE PRESIDENT HOTEL</h3>
+                          <img src="images/tph.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>A Business Hotel is a 3 star property located in one of the prime locations of Mysore, Nilgiri Road. It is in the vicinity of popular tourist attractions of the city, such as Mysore Palace.</p>  
+                          <a href="https://www.google.com/maps/place/Hotel+The+President/@12.3084169,76.6591779,18z/data=!4m8!1m2!2m1!1sTHE+PRESIDENT+HOTEL,MYSORE!3m4!1s0x3baf701410a69387:0xb5275fb6123ac6c9!8m2!3d12.309055!4d76.6596204?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                        	
+                          <h3>WHITE ORCHID</h3>
+                          <img src="images/wo.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Whether you're a tourist or traveling on business, White Orchid Resort is a great choice for accommodation when visiting Mysore. guests are well located to enjoy the town's.</p>    
+                          <a href="https://www.google.com/maps/place/WHITE+ORCHID+RESORTS/@12.3748736,76.6640122,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf70bf1f378fef:0xebdea229dd3e2abd!8m2!3d12.3748736!4d76.6662009?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>ADELINE HOTEL</h3>
+                          <img src="images/adh.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>Located just 500 metres from the city centre and the Mysore Railway Station, Hotel KVC International offers a 24-hour coffee shop and air-conditioned rooms with a 32-inch LCD TV.</p>                                          
+                           <a href="https://www.google.com/maps/place/Hotel+KVC+International/@12.3067786,76.6452563,18.23z/data=!4m5!3m4!1s0x3baf700bdeafdd2f:0x354929f093e2f812!8m2!3d12.307886!4d76.645324?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide32 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>THE NEST RESIDENCY</h3>
+                          <img src="images/tnr.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>The Nest Residency is located on Rajendra Nagar Main Road in Mysore, only 10 minutes drive from the iconic Mysore Palace. Tourist hotspots like Mysore Zoo and Jaganmohan Palace.</p>  
+                          <a href="https://www.google.com/maps/place/The+Nest+Residency/@12.332308,76.6602783,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7060c3979661:0x51b674b37896dcdc!8m2!3d12.332308!4d76.662467?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>GALLERY VIEW HOTEL</h3>
+                          <img src="images/hgv.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Gallery View has a multi-cuisine restaurant.Gallery View is a budget hotel that lies close to many tourist hotspots.</p>    
+                          <a href="https://www.google.com/maps/place/The+Gallery+View/@12.3069543,76.6490166,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf700e6d03f93b:0x139d338fefd26dcd!8m2!3d12.3069543!4d76.6512053?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>ROYAL INN</h3>
+                          <img src="images/rim.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>Offering a restaurant that serves Indian, Chinese and continental delights, Royal Inn is located in Mysore. A 24-hour front desk is available for the convenience of the guest.</p>                                           
+                           <a href="https://www.google.com/maps/place/Royal+Inn+Mysore/@12.351303,76.6266213,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a6de3189d53:0xe223651e5442d8bf!8m2!3d12.351303!4d76.62881?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide33 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>OLIVE RESIDENCY</h3>
+                          <img src="images/or.jpg" alt="Lights"  class="img-responsive"></br>             
+                          <p>Operating a 24-hour front desk to welcome guests at all hours, Olive Residency is located in the beautiful and historic town of Mysore.</p>  
+                          <a href="map99.html" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>UNITED 21</h3>
+                          <img src="images/u21.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Situated 500 metres from Mysore Palace and the nearest bus station, United 21 Mysore features a restaurant, disability friendly facilities and free private parking.</p>    
+                          <a href="https://www.google.com/maps/place/Olive+Residency/@12.340735,76.6126333,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a5c3137f6f9:0xee4338a6e364624c!8m2!3d12.340735!4d76.614822?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>SUJATHA RESIDENCY</h3>
+                          <img src="images/srm.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>Sujatha Residency is one of the finest hotels located in the business district of Mysore. Featuring a blend of unmatched hospitality and superior comfort.</p>                                          
+                           <a href="https://www.google.com/maps/place/Sujatha+Residency/@12.3291013,76.6455464,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706cc45eb8cf:0x351488bf806ab4ae!8m2!3d12.3291013!4d76.6477351?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide34 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>GRAND MAURYA RESORT</h3>
+                          <img src="images/gmr.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Guests looking for homely ambience and comfort can definitely consider Grand Maurya Resort, Mysore as a great accommodation option. The close-to-nature location.</p>  
+                          <a href="https://www.google.com/maps/place/Grand+Maurya+Hotel+%26+Resort/@12.3344338,76.5931143,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a5536776f1f:0x580693a35a4b2950!8m2!3d12.3344338!4d76.595303?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp;  <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>CHITRAVANA RESORT</h3>
+                          <img src="images/cvr.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Chitravana Resort is situated in the outskirts of Mysore, on Manandavady Road, 10 kms from Mysore railway station and the city bus stand.</p>    
+                          <a href="https://www.google.com/maps/place/Chitravana+Resorts/@12.2367522,76.6038243,16.11z/data=!4m5!3m4!1s0x3baf65af5d835c65:0x7596adf1598890bc!8m2!3d12.2368148!4d76.6060587?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>ROYAL CHALLET</h3>
+                          <img src="images/rcm.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>8.8 km from Karanji Lake, 5.2 km from Lingambudhi Lake, 7.2 km from Mysore Junction Railway Station, Restaurants, Internet, Travel assistance Located in J.P Nagar Mysore.</p>                                          
+                           <a href="https://www.google.com/maps/place/Royal+Chalet/@12.2681316,76.6426752,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf6f8b2df46a93:0xee54eb7caad583ad!8m2!3d12.2681316!4d76.6448639?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide35 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>HOTEL KALYANI</h3>
+                          <img src="images/hok.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Hotel Kalyani, Mysore is a fine resort with comfortable accommodation for leisure travelers.</p> 
+                          <a href="https://www.google.com/maps/place/Hotel+Kalyani,+Mysore/@12.3534437,76.6080512,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a46e2b3ec15:0xe223c5e2ec2887fa!8m2!3d12.3534437!4d76.6102399?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp;  <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>HOTEL BS INTERNATIONAL</h3>
+                          <img src="images/hbs.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Hotel B.S International endows its guests with a lovely stay in Mysore. It is the perfect place to relax, rejuvenate and unwind. With its convenient location.</p>    
+                          <a href="https://www.google.com/maps/place/Hotel+BS+International+Mysore/@12.321069,76.6554033,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706ec6c30427:0x54454e063f8443cd!8m2!3d12.321069!4d76.657592?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>SEPOY GRAND HOTEL</h3>
+                          <img src="images/sep.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>Offering a terrace and views of the city, Sepoy Grande Boutique Hotel is situated in Mysore. Guests can enjoy the on-site bar. free private parking is available on site.</p>                                           
+                           <a href="https://www.google.com/maps/place/SepoyGrande+Boutique+Hotel.+(Best+Boutique+Hotel+in+Mysuru)/@12.297316,76.6542313,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf701b85cbf1ff:0xf7e1c0d81f641a36!8m2!3d12.297316!4d76.65642?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide36 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>ROYAL ORCHID BRINDAVAN GARDEN</h3>
+                          <img src="images/rob.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Royal Orchid Brindavan Garden is set by Cauvery River and overlooks the world-famous Brindavan Gardens.</p>  
+                          <a href="https://www.google.com/maps/place/Royal+Orchid+Brindavan+Garden+Palace+%26+Spa/@12.396601,76.5830269,12.88z/data=!4m12!1m6!3m5!1s0x3baf78e09bcfffff:0xba1bda7d7827a95e!2sRoyal+Orchid+Brindavan+Garden+Palace+%26+Spa!8m2!3d12.4196422!4d76.5733874!3m4!1s0x3baf78e09bcfffff:0xba1bda7d7827a95e!8m2!3d12.4196422!4d76.5733874?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp;  <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>MK FAIRMONT</h3>
+                          <img src="images/mkf.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>MK Fairmont Luxury Serviced Apartment, Mysore, offers a fine stay with its personalised services, heart-warming hospitality and innate warmth.</p>    
+                          <a href="https://www.google.com/maps/place/MK+Fairmont/@12.32555,76.6712373,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf70452c0403ad:0xc99f426dd6e11780!8m2!3d12.32555!4d76.673426?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>THE RAXIDI NEST</h3>
+                          <img src="images/ran.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p> Raxidi Nest Service Apartment, Mysore, welcomes it guests into a world of comfort and convenience.</p>                                           
+                           <a href="https://www.google.com/maps/place/The+Raxidi+Nest/@12.3205681,76.625105,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7a90f8e1d31b:0x285be9eb2c55df5b!8m2!3d12.3205681!4d76.6272937?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+
+              <!-- Portfolio Gallery Grid slide37 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>JENUKAL RESIDENCY</h3>
+                          <img src="images/jr.jpg" alt="Lights"  class="img-responsive"></br>             
+                          <p>Jenukal Residence, Mysore is a modish and up-market property built to put forth affordable and most convenient accommodation in town.</p>  
+                          <a href="https://www.google.com/maps/place/Jenukal+Service+Apartment/@12.2945842,76.6194352,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7ab4303ec717:0x416a136172a24be6!8m2!3d12.2945842!4d76.6216239?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>HOTEL WHITE PARROT</h3>
+                          <img src="images/hwp.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Hotel White Parrot, Mysore is a classic functional accommodation suited for business and leisure.Situated right in the centre of the city.</p>    
+                          <a href="https://www.google.com/maps/place/Hotel+White+Parrot/@12.3290459,76.6447377,17.71z/data=!4m5!3m4!1s0x3baf7071aaaaaaab:0x3e0f3083b84b68da!8m2!3d12.3293818!4d76.6447948?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>HOTEL ABHISHEK</h3>
+                          <img src="images/hab.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p> A budget property, Hotel Abhishek is suitable for travelers looking for an economical lodging in Mysore.</p>                                           
+                           <a href="https://www.google.com/maps/place/Hotel+White+Parrot/@12.3290459,76.6447377,17.71z/data=!4m5!3m4!1s0x3baf7071aaaaaaab:0x3e0f3083b84b68da!8m2!3d12.3293818!4d76.6447948?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+
+
+              <!-- Portfolio Gallery Grid slide38 -->
+                    <div class="row listing">
+                      
+                      <div class="column">
+                        <div class="content">
+                          <h3>HOTEL ROYALE HERITAGE</h3>
+                          <img src="images/hrh.jpg" alt="Lights"  class="img-responsive"></br>              
+                          <p>Hotel Royale Heritage is located in Mysore, 1.3 km from Mysore Palace and 15 km from Brindavan Garden.</p> 
+                          <a href="https://www.google.com/maps/place/Hotel+Royal+Heritage/@12.3160862,76.656826,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf706b6415e449:0x4421a5ea7263221e!8m2!3d12.3160862!4d76.6590147?hl=en-US" class="button btn-info" >Locate Us</a>  &nbsp; <a href="#" class="button btn-info" >MM World</a>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="content">
+                          <h3>DARSHAN PALACE</h3>
+                          <img src="images/hdp.jpg" alt="Nature"  class="img-responsive"></br>
+                          <p>Darshan Palace, Mysore is placed in the midst of peaceful surroundings of the historical city.</p>    
+                          <a href="https://www.google.com/maps/place/Hotel+Darshan+Palace,+Mysore/@12.3050492,76.6628115,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf703d6435c92b:0x1b44be63d5628e8f!8m2!3d12.3050492!4d76.6650002?hl=en-US" class="button btn-info">Locate Us</a> &nbsp; <a href="#" class="button btn-info">MM World</a>
+                         </div>
+                       </div>
+                       <div class="column">
+                        <div class="content">
+                          <h3>CAUVERY SANNIDHI MYSORE</h3>
+                          <img src="images/csm.jpg" alt="adeiline"  class="img-responsive"></br>
+                          <p>Cauvery Sannidhi, Mysore is strategically located on the banks of pristine river Cauvery.</p>                                           
+                           <a href="https://www.google.com/maps/place/Cauvery+Sannidhi+for+Indian+Culture/@12.4077932,76.6791933,17z/data=!3m1!4b1!4m5!3m4!1s0x3baf7aaa26a21be9:0x7e2ff0e2d2ec05e3!8m2!3d12.4077932!4d76.681382?hl=en-US" class="button btn-info">Locate Us</a> &nbsp;  <a href="#" class="button btn-info">MM World</a>
+                        </div>
+                          
+                      </div>
+                    </div>
+              <!-- END GRID -->
+				
+			<!-- END MAIN -->
+</div>
+
+<a href="#" class="nextbtn round" onclick="plusDivs(1)">&#10095;</a></br></br></div>	
+
+</div>
+
+
+<!--Search-->
+
+<!-- End Search-->
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("listing");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<!--<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>-->
+</body>
+</html>

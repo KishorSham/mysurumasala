@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<!--<link href="css/fbcss.css" rel="stylesheet" />-->
+<!--<link href="css/bootstrap.min.css" rel="stylesheet" />
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+ <title>Mysuru Masala</title>
+
+</head>
+<style>
+
+@font-face {
+   font-family: century gothic;
+   src: url(century-gothic/Century Gothic.ttf);
+}
+	body{
+		margin:0px;
+		padding:0px;
+		font-family:"Century Gothic";
+	}
+	
+	.container-fluid{
+		width:100%;	
+	}
+	.navbar-toggle{
+		margin-right:5px;
+		background-color:#333333;
+	}
+	.navbar-default{
+		background-color:#121d3c;
+	}
+	
+	.navbar-default .navbar-nav > li > a {
+    
+		color:rgb(255, 153, 0);
+	}
+			
+	.img-back{
+		width:100%;
+		height:250px;	
+	}
+	
+	.row-panel{
+		margin-left:20%;
+		margin-right:20%;
+		margin-top:-5%;
+		margin-bottom:15px;
+		background-color:#FFFFFF;
+	}
+	
+	.firstCol{
+		margin:1px;
+		padding:0px;
+		margin-left:15px;
+		background-color:rgb(255, 153, 0) ;
+		
+	}
+	.col-3Style img{
+		margin-top:10px;
+		width:40px;
+		height:40px;
+	}
+	.headstyle{
+		width:46%;
+		text-align:center;
+		color:white;
+		font-family:"Century Gothic";
+		padding-bottom:20px;
+		height:150px;!important
+	}
+	
+	.sm-img img{
+		/*margin-top:-10px;*/
+		margin-left:0px;
+		padding:0px;
+		width:690px;
+		height:25vh;	
+	}
+	.firstPara{
+		margin:0px;
+		padding:5px;
+		text-align:justify;
+		font-family:"Century Gothic";
+		font-size:15px;
+		color:rgb(255, 153, 0);
+	}
+	.firstPara img{
+		margin:3px;
+		float:left;
+		height:75px;
+		width:60px;
+	}
+	.detailedPara img{
+		margin:2px;
+		float:left;
+		height:50px;
+		width:40px;
+	}
+	.detailedPara{
+		margin:0px;
+		padding:5px;
+		text-align:justify;
+		font-family:"Century Gothic";
+		font-size:14px;	
+	}
+	.col8Style{
+		margin:0px;
+		padding:0px;
+	}
+	.col-4Style{
+		margin:0px;
+		padding:0px;
+		width:30%;
+	}
+	.btn{
+		/*margin:5px;*/
+		
+    background-color: rgb(255, 153, 0); /* Green */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+	}
+	.btn:hover{
+		color:white;	
+	}
+		@media only screen and (max-width: 1400px) {
+		}
+	
+	
+	
+	@media only screen and (max-width: 1100px) {
+		.stars{
+			padding-top:80px;
+		float:right;	
+		}
+	}
+	
+	
+	@media (max-width: 900px) {
+		.row-panel{
+			width:60%;
+		}
+		.firstCol{
+			margin-top:-25px;
+			width:100%;
+			height:130px;
+		}
+		.col-3Style{
+			width:100%;
+		}
+		.stars{
+			float:right;
+			padding-top:10px;
+			width:100%;
+		}
+		.col-4Style{
+			width:100%;
+			
+		}
+		
+	}
+	
+	@media (max-width: 600px) {
+		.firstCol{
+			margin-top:-25px;
+			width:94%;
+			height:130px;
+		}
+		.col-4Style {
+			width:100%;
+			
+		}
+	}
+
+</style>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<nav class="navbar navbar-default nav-style">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        						<span class="icon-bar"></span>                        
+      								</button>
+    									</div>
+    
+    										<div class="collapse navbar-collapse" id="myNavbar" >
+      											<ul class="nav navbar-nav navbar-right">
+        											<li class=""><a href="#">Home </a></li>
+        												<li><a href="#">Booking </a></li>
+        													<li><a href="nav.html">OrderList </a></li>
+        														<li><a href="#">Events </a></li>
+        															<li><a href="#">Follow</a></li>
+        																<li><a href="#">AboutUs </a></li>
+      											</ul>
+       										</div>
+  			</div>
+		</nav>
+        <!--<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>-->
+     </div>
+	
+
+	<div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+             <img src="gallery/vc.jpg" class="img-responsive img-back">
+        		</div>
+					</div>
+
+	<div class="row">
+    	<div class="col-lg-1 "></div>
+        
+        	<div class="col-lg-10 col-md-10 col-sm-10">
+            	<div class="row-panel">	
+                    <div class="row ">
+                    	<div class="col-lg-6 col-md-6 col-sm-6 firstCol headstyle">
+                        	<h3></br>Viceroy Comforts</br></h3>
+                        		</div>
+                        
+                       	 <div class="col-lg-6 col-md-6 col-sm-6 col-3Style ">
+                        	<p class="firstPara">                                
+                            	<img src="images.jpg" class="img-circle img-responsive" />
+									" Built in the exquisite architecture and modern facilities. It's a perfect paradise for the connoisseur, a destination for creating Golden Memories every time you stay with us."                        		
+										</p>                        					
+                          					</div>
+                        
+                    </div>
+                    
+                    
+                    
+                    <div class="row">
+                    	<div class="col-lg-6 col-md-6 col-sm-6 sm-img">
+                        	<img src="final/viceroy-com.jpg" class="img-responsive"/>
+                        		</div>
+                    	
+                        			<div class="col-lg-6 col-md-6 col-sm-6">
+                       					
+                                         <div class="row">
+                                             <div class="col-lg-4 col-md-4 col-sm-4">
+                                                 <i class="fa fa-automobile" style="margin:15px;font-size:24px;color:rgb(255, 153, 0);"></i> &nbsp;&nbsp;
+                                                    <p>Free Parking.</p>
+                                                    	</div>
+                                                    		<div class="col-lg-4 col-md-4 col-sm-4">
+                            									<i class="fa fa-wifi" style="margin:15px;font-size:24px;color:rgb(255, 153, 0);"></i>&nbsp;&nbsp;
+                            										<p>Free High Speed Internet ( WiFi ).</p>
+                                                                		</div>
+                                                                			<div class="col-lg-4 col-md-4 col-sm-4">
+                                                                				<i class="fa fa-coffee" style="margin:15px;font-size:24px;color:rgb(255, 153, 0);"></i>&nbsp;</br>
+                                                        							<p>Restaurant</br>Breakfast included.</p>
+                                                                    					</div>
+                                                                    
+
+																
+                                      </div>
+
+                      </div>
+                 </div>
+                 
+                 <div class="row">
+                 	<div class="col-lg-6 col-md-6 col-sm-6">
+                    <h4 style="font-family:'Century Gothic';color:rgb(255, 153, 0);text-align:center;font-weight:bold;">Reservation Options</h4>
+                    TripAdvisor is proud to partner with ClearTrip, Booking.com, Expedia, Hotels.com, OYO Rooms, Yatra, MakeMyTrip and TravelGuru so you can book your The Viceroy Comforts reservations with confidence.
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                         <a href="nav.html#div2" class=" btn">Book / Order Online</a><a href="" class=" btn "> &nbsp; Go To Website &nbsp; </a>  <a href="" class=" btn">&nbsp;&nbsp;Locate Us&nbsp;</a>
+                    </div>
+                 	<div class="col-lg-3 col-md-3 col-sm-3 stars">
+                    
+						<span class="fa fa-star checked" style="color:rgb(255, 153, 0);"></span>
+														 			<span class="fa fa-star checked" style="color:rgb(255, 153, 0);"></span>
+														 				<span class="fa fa-star checked" style="color:rgb(255, 153, 0);"></span>
+														 					<span class="fa fa-star" style="color:rgb(255, 153, 0);"></span>
+														 						<span class="fa fa-star" style="color:rgb(255, 153, 0);"></span>
+																					</br><p style="font-family: century gothic;">4.0 Star Hotel</p>
+                                                                
+					</div>
+                 </div>     
+                 
+                 <div class="row">
+                 	<div class="col-lg-6 col-md-6 col-sm-6">
+                    	<h5 style="font-family:'Century Gothic';color:rgb(255, 153, 0);text-align:center;font-weight:bold;">
+                        	Review
+                        		</h5>
+                                <p class="detailedPara">                                <img src="images.jpg" class="img-circle img-responsive" />
+
+                        	"Very close to Mysore palace. Breakfast buffet is very average and costly. Not providing breakfast in room and forcing to take the buffet. No fan in rooms only AC. Rooms are good spacious and clean. But not equipped with everything that's needed.  "
+                        		</p>
+                               
+                    				</div>
+                 						<div class="col-lg-6 col-md-6 col-sm-6">
+                    						<div class="row">
+                                            	<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">
+                                                	<img src="gallery/vc1.jpg" class="img-thumbnail img-responsive" />
+                                                		<!--</div>
+                                                			<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">
+                                                		-->		<img src="gallery/vc2.jpg" class="img-thumbnail img-responsive" />
+                                                    				<!--</div>
+                                            							<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">
+                                                        	       -->         <img src="gallery/vc1.jpg" class="img-thumbnail img-responsive" />                                                        
+                                                        							</div>
+                                               										 	<!--</div>-->
+                                                                                     
+											<!--<div class="row">-->
+                                            	<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">
+                                                	<img src="gallery/vc1.jpg" class="img-thumbnail img-responsive" />
+                                                		<!--</div>
+                                                			<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">-->
+                                                				<img src="gallery/vc2.jpg" class="img-thumbnail img-responsive" />
+                                                    				<!--</div>
+                                            							<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">-->
+                                                        	                <img src="gallery/vc1.jpg" class="img-thumbnail img-responsive" />                                                        
+                                                        						</div>
+                                               										 <!--</div>-->
+                                                                                     
+                                             <!--<div class="row">-->
+                                            	<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">
+                                                	<img src="gallery/vc1.jpg" class="img-thumbnail img-responsive" />
+                                                		<!--</div>
+                                                			<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">-->
+                                                				<img src="gallery/vc2.jpg" class="img-thumbnail img-responsive" />
+                                                    				<!--</div>
+                                            							<div class="col-lg-4 col-md-4 col-sm-4 col-4Style">-->
+                                                        	                <img src="gallery/vc1.jpg" class="img-thumbnail img-responsive" />                                                        
+                                                        						<!--</div>-->
+                                               										 </div>
+	                                                                                     </div>  
+                      </div>
+                      
+            	</div><!--Row Panel-->
+                
+                
+            </div>
+    	
+    		<div class="col-lg-1 "></div>
+    </div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+<!--Main Container-->
+
+<!--<script src="js/bootstrap.min.js"></script>
+--></body>
+</html>

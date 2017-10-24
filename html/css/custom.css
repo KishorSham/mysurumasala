@@ -1,0 +1,423 @@
+
+
+@font-face {
+   font-family: century gothic;
+   src: url(century-gothic/Century Gothic.ttf);
+}
+
+
+.logo{
+    width: 12%;
+    float: left;
+    padding: 10px;
+}
+
+.bg{
+opacity: 1;
+background-color: rgba(0, 0, 0, 0.64);
+box-shadow: 0 1px 0 rgba(0,0,0,0.1) inset, 0 -1px 0 rgba(0,0,0,0.1) inset;
+border: none; !important 
+}
+
+.bg1{
+background-color: #050658;
+}
+ 
+ .header{background-color:#121d3c;}
+ 
+ 
+ .navbar-inverse{
+	 background-color:#121d3c;
+	 border-color:#121d3c;
+ }
+ 
+ }
+ 
+ /*.navbar-inverse{
+	 background-color:#121d3c;
+	 border-color:#121d3c;
+ }*/
+ 
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu{
+padding-top: 25px;
+}
+
+.search{
+padding-top:10px;
+}
+
+.search-input{
+padding: 10px;
+}
+
+
+.container {
+padding-right: 0px;
+padding-left: 0px;
+
+}
+
+@media (min-width: 992px)
+.col-md-3 {
+    width: 25%;
+}
+
+.row{
+     margin-right: -0px; 
+     margin-left: -0px; 
+}
+
+
+.col-md-3{
+padding: 1.5%;
+}
+
+.line{
+background-color:#55d5ff;
+	height:5px;
+	width: 100%
+}
+.line1{
+background-color:#1ce299;
+	height:5px;
+	width: 100%
+}
+.line2{
+background-color:#e85a16;
+	height:5px;
+	width: 100%
+}
+.line3{
+background-color:#e611e0;
+	height:5px;
+	width: 100%
+}
+.line4{
+background-color: #ffca0a;
+	height:5px;
+	width: 100%
+}
+
+.line5{
+background-color:#1F4BED;
+	height:5px;
+	width: 100%
+}
+
+.panel{
+    background-color: inherit;
+    border: none;
+}
+
+.panel-default>.panel-heading{
+background-color:#EEEEEE;
+height: 60px;
+ padding-top:30px;
+ text-align: left;
+ font-size:16px;
+}
+
+.panel-heading{
+    border-top-left-radius: 0px;
+    border-top-right-radius:0px;
+    border-bottom: 1px solid #E0E1DC;
+    background-color: #fff;
+    height: 45px;
+   
+}
+
+.ContentClass{
+	padding:5px;
+	font-family:"Century Gothic";
+	font-size:14px;
+}
+
+.flipcard {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  perspective: 500px;
+}
+.flipcard.v:hover .front, .flipcard.v.flip .front{
+  transform: rotateX(180deg);
+}
+.flipcard.v:hover .back, .flipcard.v.flip .back{
+  transform: rotateX(0deg);
+}
+.flipcard.v .back{
+  transform: rotateX(-180deg);
+}
+.flipcard.h:hover .front, .flipcard.h.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard.h:hover .back, .flipcard.h.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard.h .back{
+  transform: rotateY(-180deg);
+}
+.flipcard .front, .flipcard .back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  color: black;
+  background-color: #ffffff;
+  
+  backface-visibility: hidden;
+}
+
+
+.flipcard1 {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  perspective: 500px;
+}
+.flipcard1.v:hover .front, .flipcard1.v.flip .front{
+  transform: rotateX(180deg);
+}
+.flipcard1.v:hover .back, .flipcard1.v.flip .back{
+  transform: rotateX(0deg);
+}
+.flipcard1.v .back{
+  transform: rotateX(-180deg);
+}
+.flipcard1.h:hover .front, .flipcard1.h.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard1.h:hover .back, .flipcard1.h.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard1.h .back{
+  transform: rotateY(-180deg);
+}
+.flipcard1 .front, .flipcard1 .back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  color: black;
+  background-color: #ffffff;
+  backface-visibility: hidden;
+}
+
+
+.flipcard2 {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  perspective: 500px;
+}
+.flipcard2.v:hover .front, .flipcard2.v.flip .front{
+  transform: rotateX(180deg);
+}
+.flipcard2.v:hover .back, .flipcard2.v.flip .back{
+  transform: rotateX(0deg);
+}
+.flipcard2.v .back{
+  transform: rotateX(-180deg);
+}
+.flipcard2.h:hover .front, .flipcard2.h.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard2.h:hover .back, .flipcard2.h.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard2.h .back{
+  transform: rotateY(-180deg);
+}
+.flipcard2 .front, .flipcard2 .back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  color: black;
+  background-color: #ffffff;
+  
+  backface-visibility: hidden;
+}
+
+.flipcard3 {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  perspective: 500px;
+}
+.flipcard3.v:hover .front, .flipcard3.v.flip .front{
+  transform: rotateX(180deg);
+}
+.flipcard3.v:hover .back, .flipcard3.v.flip .back{
+  transform: rotateX(0deg);
+}
+.flipcard3.v .back{
+  transform: rotateX(-180deg);
+}
+/*
+.flipcard2.h:hover .front, .flipcard2.h.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard2.h:hover .back, .flipcard2.h.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard2.h .back{
+  transform: rotateY(-180deg);
+}
+*/
+.flipcard3 .front, .flipcard3 .back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  color: black;
+  background-color: #ffffff;
+  
+  backface-visibility: hidden;
+}
+
+
+img{
+width :  100%;
+}
+
+.pager{
+padding: 30px;
+
+}
+
+
+.footer {
+    background: rgba(0, 0, 0, 0.95);
+    height: 50px;
+    }
+    
+    .leftfooter {
+    float: left;
+}
+.leftfooter a {
+    margin: 15px;
+  
+}
+a{
+  color: #55D5FF;
+}
+
+.rightfooter {
+    float: right;
+    text-align: right;
+}
+
+.contentfooter {
+    padding: 15px;
+}
+
+
+.wrapper {
+    width: 95%;
+    margin: 3em auto;
+}
+
+.masonry {
+    margin: 1.5 em 0;
+    padding: 0;
+    -moz-column-gap:  1.5 em;
+    -webkit-column-gap:  1.5 em;
+    column-gap:  1.5 em;
+    font-size: .85em;
+}
+
+.item {
+    display: inline-block;
+    margin: 0 0 10px;
+    width: 100%;
+    
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+	.hotelier{
+	margin-top:-5px;	
+	}
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mysuru Masala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    #navbar1{
+      background-color:rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.7); 
+      border-color: rgba(0,0,0,0.7);
+    }
+    #nav1{
+      color:black;
+    }
+    #lp0{
+      text-align:center; 
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+  ul li{list-style: none;}
+  #div3{
+	  height: 88%;
+	  width: 70%;
+	  margin-left: 20%; 
+	  display: none;
+	  background-image: url(images/23.jpg);
+  }
+  
+  
+  
+  
+  @media (max-width: 600px) {
+	food-menu-items-192{
+		width:100%;
+	}
+  }
+  </style>
+ <script type="text/javascript">
+ 
+  $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+//fadeIn
+$(document).ready(function(){
+      $("#div2").click(function(){
+        $("#div3").fadeIn();
+      });
+    });
+
+</script>
+ 
+</head>
+<body>
+<div id="div1" class="active" style="height: 100vh;background-image:url(images/22.jpg);">
+<nav id="navbar1" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <h5 class="icon-bar"></h5>
+        <h5 class="icon-bar"></h5>
+        <h5 class="icon-bar"></h5>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul id="nav1" class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Booking<h5 class="caret"></h5></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Table</a></li>
+            <li><a href="#">PartyHall</a></li>
+            <li><a href="#">RoomStay</a></li>
+            <li><a href="#">HomeStay</a></li>
+          </ul>
+        </li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<h5 class="caret"></h5></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Marriage</a></li>
+            <li><a href="#">Birthday</a></li>
+          </ul>
+      </li>
+        <li ><a href="#div2">OrderOnline</a></li>
+        <li><a href="#">Follow</a></li>
+        <li><a href="#">AboutUs</a></li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>  
+<div id="div2" style="height: 100vh; background-image:url(images/21.jpg); ">
+  <nav id="navbar1" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <h5 class="icon-bar"></h5>
+        <h5 class="icon-bar"></h5>
+        <h5 class="icon-bar"></h5>                        
+      </button>
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar"> 
+      <ul id="nav1" class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<h5 class="caret"></h5></a>
+            <ul class="dropdown-menu">
+              <li  id="l1"><a href="#div3">Veg</a></li>
+              <li><a href="#">NonVeg</a></li>
+              <li><a href="#">Continental</a></li>
+              <li><a href="#">Desserts</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+  </nav>
+<div id="div3" >
+  <ul class="food-menu-items-192">
+
+    <li>
+      <div class="row"> 
+        <div class="col-lg-3 col-md-3 col-sm-3"><h5>DISHES</h5></div>
+        <div class="col-lg-1 col-md-1 col-sm-1"><h5>RATE</h5></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><h5>ORDERONTABLE</h5></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><h5>PARCELONTABLE</h5></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><h5>HOMEDELIVERY</h5></div>
+         <div class="col-lg-2 col-md-2 col-sm-2"><h5>QUANTITY</h5></div>
+      </div>
+    </li>
+
+    <li>
+      <div class="row">
+        <div class="col-lg-3"><h5>1. Chana Masala</h5></div>
+       <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px; margin-left: 12%;"></h6></div>
+      </div>
+    </li>
+
+    <li>
+      <div class="row">
+        <div class="col-lg-3"><h5>2. Rajma Masala</h5></div>
+       <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+        <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px; margin-left: 12%;"></h6></div>
+        </div>
+     </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>3. Gobi Masala</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>4. Alu Gobi Masala</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+       
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>5. Dal Fry</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>6. Mix Veg Curry</h5></div>
+          <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+      </div>
+    </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>7. Vegetable diwani Handi</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>8. Mix Veg Vindaloo</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>9. Bhindi Masala</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>10. Paneer Tikka Masala</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+
+    <li>
+        <div class="row">
+          <div class="col-lg-3"><h5>11. Malai Kofta</h5></div>
+         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
+          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
+        </div>
+    </li>
+
+    <div style="margin-top: 2%;"><input type="submit" name="submit" value="Temporary Confirmation" style="width: 20%;margin-left: 40%;"></div>
+
+   <div id="timer" style="margin-top: 0%; margin-left: 32%; position: absolute; margin-right: 25%;font-size: 200%;">1:00
+<script type="text/javascript">
+	var timeoutHandle;
+	function countdown(minutes) {
+    var seconds = 60;
+    var mins = minutes
+    function tick() {
+        var counter = document.getElementById("timer");
+        var current_minutes = mins-1
+        seconds--;
+        counter.innerHTML =
+        current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
+        if( seconds > 0 ) {
+            //timeoutHandle=setTimeout(tick, 1000);
+			 var confirm = document.getElementById("confirm");
+			 display(confirm);
+        } else {
+
+            if(mins > 1){
+
+               // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst
+               setTimeout(function () { countdown(mins - 1); }, 1000);
+
+            }
+        }
+    }
+    tick();
+}
+
+countdown(1);
+
+</script>
+
+</div>
+
+   
+    <div style="margin-top: 4%;"><input type="submit" name="submit" id="confirm" value="confirmation" style="width: 20%;margin-left: 40%;"></div>
+</ul>  
+  
+</div>
+</div>
+
+
+</body>
+</html>
