@@ -62,6 +62,13 @@
 		  padding:0px;
 		  width:100%;
 	  }
+	  .bttn1{
+	color:white;
+	background-color:#5bc0de;
+  border:none;
+  padding: 5px;
+	}
+
 	.desk{
 		display:none;!important
 	}
@@ -81,7 +88,15 @@ tbody tr:nth-child(even) td {
 }*/
 
 }
-
+@media only screen and (max-width: 1600px) {
+.bttn1{
+		margin-left:80px;
+	color:white;
+	background-color:#5bc0de;
+  border:none;
+  padding: 5px;
+	}
+}
 
     @media only screen and (max-width: 800px) {
     	
@@ -94,6 +109,13 @@ tbody tr:nth-child(even) td {
     	#no-more-tables tr { 
     		display: block; 
     	}
+		.bttn1{
+		margin-left:20px;
+	color:white;
+	background-color:#5bc0de;
+  border:none;
+  padding: 5px;
+	}
      
     	/* Hide table headers (but not display: none;, for accessibility) */
     	#no-more-tables thead tr { 
@@ -132,7 +154,11 @@ tbody tr:nth-child(even) td {
     	*/
     	#no-more-tables td:before { content: attr(data-title); }
     }
-    						
+	#div0{
+	margin:0px;
+	padding:0px;
+	
+	}			
 
 
   </style>
@@ -164,7 +190,7 @@ tbody tr:nth-child(even) td {
 });
 //fadeIn
 $(document).ready(function(){
-      $("#div2").click(function(){
+      $("#l1").click(function(){
         $("#div3").fadeIn();
       });
     });
@@ -173,9 +199,9 @@ $(document).ready(function(){
  
 </head>
 <body>
-<div id="div1" class="active" style="height: 100vh;background-image:url(images/22.jpg);">
-
-<nav id="navbar1" class="navbar navbar-inverse">
+<div id="div0" class="container-fluid">
+<div id="div1" class="active" style="height: 100vh;background-image:url(images/21.jpg);">
+  <nav id="navbar1" class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -186,7 +212,7 @@ $(document).ready(function(){
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul id="nav1" class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
       <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Booking<h5 class="caret"></h5></a>
           <ul class="dropdown-menu">
@@ -196,6 +222,15 @@ $(document).ready(function(){
             <li><a href="#">HomeStay</a></li>
           </ul>
         </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<h5 class="caret"></h5></a>
+            <ul class="dropdown-menu">
+              <li  id="l1"><a href="#div3">Veg</a></li>
+              <li><a href="#">NonVeg</a></li>
+              <li><a href="#">Continental</a></li>
+              <li><a href="#">Desserts</a></li>
+            </ul>
+          </li>
       <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<h5 class="caret"></h5></a>
           <ul class="dropdown-menu">
@@ -211,33 +246,6 @@ $(document).ready(function(){
     </div>
   </div>
 </nav>
-</div>  
-<div id="div2" >
-  <nav id="navbar1" class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
-        <h5 class="icon-bar"></h5>
-        <h5 class="icon-bar"></h5>
-        <h5 class="icon-bar"></h5>                        
-      </button>
-    </div>
-     <div class="collapse navbar-collapse" id="myNavbar1"> 
-      <ul id="nav1" class="nav navbar-nav">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu<h5 class="caret"></h5></a>
-            <ul class="dropdown-menu">
-              <li  id="l1"><a href="#div3">Veg</a></li>
-              <li><a href="#">NonVeg</a></li>
-              <li><a href="#">Continental</a></li>
-              <li><a href="#">Desserts</a></li>
-            </ul>
-          </li>
-        </ul>
-    </div>
-  </div>
-  </nav>
-  
   
 <div id="div3">
       
@@ -255,32 +263,32 @@ $(document).ready(function(){
   <tbody>
     <tr>
       <th scope="row">1. Chana Masala</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
-            <td><input type="number" id="myNumber" value="0" style="width:40px; margin-left: 0%;"></td>
+            <td><input type="number" id="myNumber" value="0" style="width:40px; margin-left:12%;"></td>
 
     </tr>
     <tr>
       <th scope="row">2. Rajma Masala</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
-      <td><input type="number" id="myNumber" value="0" style="width:40px; margin-left: 0%;"></td>
+      <td><input type="number" id="myNumber" value="0" style="width:40px; margin-left:12%;"></td>
     </tr>
     <tr>
       <th scope="row">3. Gobi Masala</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
-      <td><input type="number" id="myNumber" value="0" style="width:40px; margin-left:0%;"></td>
+      <td><input type="number" id="myNumber" value="0" style="width:40px; margin-left:12%;"></td>
     </tr>
      <tr>
       <th scope="row">4. Alu Gobi Masala</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
@@ -288,7 +296,7 @@ $(document).ready(function(){
     </tr>
      <tr>
       <th scope="row">5. Dal Fry</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
@@ -296,7 +304,7 @@ $(document).ready(function(){
     </tr>
      <tr>
       <th scope="row">6. Mix Veg Curry</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
@@ -304,7 +312,7 @@ $(document).ready(function(){
     </tr>
      <tr>
       <th scope="row">7. Vegetable diwani Handi</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
@@ -312,7 +320,7 @@ $(document).ready(function(){
     </tr>
      <tr>
       <th scope="row">8. Mix Veg Vindaloo</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
@@ -320,7 +328,7 @@ $(document).ready(function(){
     </tr>
      <tr>
       <th scope="row">9. Bhindi Masala</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
@@ -328,7 +336,7 @@ $(document).ready(function(){
     </tr>
      <tr>
       <th scope="row">10. Paneer Tikka Masala</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
@@ -336,178 +344,28 @@ $(document).ready(function(){
     </tr>
      <tr>
       <th scope="row">11. Malai Kofta</th>
-      <td>$ 8.99</td>
+      <td>8.99</td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="checkbox" name="checkbox" id="lp0"></td>
       <td><input type="number" id="myNumber" value="0" style="width:40px; margin-left: 12%;"></td>
     </tr>
-    </tbody>
+    
+	<tr>
+    <td colspan="2"><button class="bttn1" style="font-size:12px;">Temporary Confirmation</button></td>
+	<td colspan="2"><button class="bttn1">0:59</button></td>
+	<td colspan="2"><button class="bttn1"style="font-size:12px;">Confirmation</button></td>
+</tr>
+  </tbody>
   </table>
-  <!--</div>-->
-<!--</div>-->
-
-
-
- <!-- <ul class="food-menu-items-192">
-
 
    
-
-    <li>
-      <div class="row">
-        <div class="col-lg-3"><h5>2. Rajma Masala</h5></div>
-       <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-        <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-        <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px; margin-left: 12%;"></h6></div>
-        </div>
-     </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>3. Gobi Masala</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>4. Alu Gobi Masala</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-       
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>5. Dal Fry</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>6. Mix Veg Curry</h5></div>
-          <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-      </div>
-    </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>7. Vegetable diwani Handi</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>8. Mix Veg Vindaloo</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>9. Bhindi Masala</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>10. Paneer Tikka Masala</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-
-    <li>
-        <div class="row">
-          <div class="col-lg-3"><h5>11. Malai Kofta</h5></div>
-         <div class="col-lg-1"> <h5>$ 8.99</h5></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><input type="checkbox" name="checkbox" id="lp0"></div>
-          <div class="col-lg-2 col-md-2 col-sm-2"><h6><input type="number" id="myNumber" value="0" style="width:30px;margin-left: 12%;"></h6></div>
-        </div>
-    </li>
-
-    <div style="margin-top: 2%;"><input type="submit" name="submit" value="Temporary Confirmation" style="width: 20%;margin-left: 40%;"></div>
-
-   <div id="timer" style="margin-top: 0%; margin-left: 32%; position: absolute; margin-right: 25%;font-size: 200%;">1:00
-<script type="text/javascript">
-	var timeoutHandle;
-	function countdown(minutes) {
-    var seconds = 60;
-    var mins = minutes
-    function tick() {
-        var counter = document.getElementById("timer");
-        var current_minutes = mins-1
-        seconds--;
-        counter.innerHTML =
-        current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
-        if( seconds > 0 ) {
-            //timeoutHandle=setTimeout(tick, 1000);
-			 var confirm = document.getElementById("confirm");
-			 display(confirm);
-        } else {
-
-            if(mins > 1){
-
-               // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst
-               setTimeout(function () { countdown(mins - 1); }, 1000);
-
-            }
-        }
-    }
-    tick();
-}
-
-countdown(1);
-
-</script>
-
-</div>
-
-   
-    <div style="margin-top: 4%;"><input type="submit" name="submit" id="confirm" value="confirmation" style="width: 20%;margin-left: 40%;"></div>
-</ul>  -->
+    
+</ul>  
   
 </div>
 </div>
 
-
+</div>
 </body>
 </html>
